@@ -1,51 +1,101 @@
-**README.md**
+GAIA Benchmarking Agent
 
-**GAIA Benchmarking Agent**
+A Python-based benchmarking agent for the Hugging Face Agent Course, designed to automate GAIA task evaluation and answer submission.
 
-A Python-based benchmarking agent for Hugging Face agents, designed for the Hugging Face Agent Course.
+Project Overview
 
-**Project Overview**
+This project provides a simple framework for working with GAIA benchmark tasks through a Gradio interface.
 
-This project provides a framework for interacting with the Hugging Face Agent Course, including:
+The agent supports:
 
-* Fetching task attachments and determining their type (e.g., Excel files)
-* Handling errors and printing stack traces for debugging purposes
-* Submitting answers to GAIA tasks and evaluating the results
+Fetching GAIA task attachments and identifying their file types, such as Excel files.
+Processing and handling task-related files.
+Handling errors and displaying stack traces for debugging.
+Running GAIA tasks and generating answers.
+Submitting answers for evaluation.
+Displaying task questions, generated answers, and evaluation status through a Gradio interface.
+Requirements
+Python 3.11.9
+Hugging Face account
+Installation
+1. Clone the repository
+git clone https://github.com/your-username/gaia-benchmark-agent.git
+cd gaia-benchmark-agent
+2. Create a virtual environment
+python -m venv venv
 
-**Requirements**
+Activate the virtual environment:
 
-* Python 3.11.9
+Linux/macOS
 
-**Installation**
+source venv/bin/activate
 
-1. Clone this repository using `git clone https://github.com/your-username/gaia-benchmark-agent.git`
-2. Install the required libraries using `pip install -r requirements.txt`
-3. Run the application using `python app.py`
+Windows
 
-**Usage**
+venv\Scripts\activate
+3. Install dependencies
+pip install -r requirements.txt
+4. Run the application
+python app.py
 
-1. Login to your Hugging Face account
-2. Click **Run Evaluation & Submit All Answers**
-3. The agent will process all GAIA tasks and submit the answers
-4. View the run status and submission result using the Gradio interface
+The Gradio interface will start locally. Open the URL displayed in the terminal.
 
-**Gradio Interface**
+Usage
+Start the application using python app.py.
+Login to your Hugging Face account through the Gradio interface.
+Click Run Evaluation & Submit All Answers.
+The agent will process the available GAIA tasks.
+Generated answers will be submitted for evaluation.
+Review the run status, questions, and generated answers in the interface.
+Gradio Interface
 
-The Gradio interface provides a simple and intuitive way to interact with the agent. It includes:
+The Gradio interface provides a simple way to interact with the benchmarking agent.
 
-* A login button to authenticate with your Hugging Face account
-* A run button to submit all answers
-* A text box to display the run status and submission result
-* A table to display the questions and agent answers
+It includes:
 
-**Testing**
+Login: Authenticate with your Hugging Face account.
+Run Evaluation & Submit All Answers: Start the GAIA evaluation process.
+Run Status: Display the current execution status and submission results.
+Questions & Answers: Display GAIA questions alongside the generated answers.
+Testing
 
-You can test the agent locally by running the `app.py` file and submitting a single task. You can also test the agent's functionality by submitting multiple tasks and viewing the results.
+You can test the agent locally by running:
 
-**Contributing**
+python app.py
 
-Contributions to this project are welcome. Please submit pull requests with any changes or improvements you'd like to make.
+For development and debugging, you can:
 
-**License**
+Submit a single GAIA task.
+Process multiple tasks.
+Check generated answers.
+Review error messages and stack traces.
+Verify the submission status.
+Project Structure
+gaia-benchmark-agent/
+├── app.py
+├── requirements.txt
+├── LICENSE
+├── README.md
+└── ...
+Contributing
 
-This project is licensed under the MIT License. See the `LICENSE` file for details.
+Contributions are welcome.
+
+To contribute:
+
+Fork the repository.
+Create a new branch.
+git checkout -b feature/your-feature
+Make your changes.
+Test the changes locally.
+Commit your changes.
+git commit -m "Add your feature"
+Push the branch and open a Pull Request.
+
+Please make sure your changes are tested and clearly documented.
+
+License
+
+This project is licensed under the MIT License.
+
+See the LICENSE file for the complete license text.
